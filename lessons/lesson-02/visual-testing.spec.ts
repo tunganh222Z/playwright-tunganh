@@ -8,9 +8,9 @@ test.describe('Run test with visual testing',
                         await page.goto("https://material.playwrightvn.com/");
 
                         await test.step('verify homePage displayed',
-                        async () => {
-                              await expect(page).toHaveScreenshot("home.png");
-                              await expect(await page.screenshot({fullPage : true})).toMatchSnapshot("homepageFUll.png")
+                              async () => {
+                                    await expect(page).toHaveScreenshot("home.png");
+                                    await expect(await page.screenshot({fullPage : true})).toMatchSnapshot("homepageFUll.png")
                         }
                   )
                   }
